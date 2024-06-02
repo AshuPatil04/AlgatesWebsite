@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+
 :root {
     --primary: #01AC93;
     --secondary: #E93C05;
@@ -40,22 +40,9 @@ h6,
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
 
 
-/*** Button ***/
+
 .btn {
     border: none;
     transition: .5s;
@@ -93,7 +80,7 @@ h6,
 }
 
 
-/*** Navbar ***/
+
 .fixed-top {
     transition: .5s;
 }
@@ -156,7 +143,7 @@ h6,
 }
 
 
-/*** Header ***/
+
 .carousel-caption {
     top: 0;
     left: 0;
@@ -221,13 +208,12 @@ h6,
 }
 
 
-/*** Facts ***/
 .facts {
     background: linear-gradient(rgb(1 172 147 / 95%), rgb(1 172 147 / 95%)), url(../img/bg.png);
 }
 
 
-/*** Callback ***/
+
 .callback {
     position: relative;
 }
@@ -244,7 +230,6 @@ h6,
 }
 
 
-/*** Feature ***/
 .feature .feature-box,
 .feature .feature-box * {
     transition: .5s;
@@ -259,8 +244,15 @@ h6,
     color: #FFFFFF !important;
 }
 
+.feature .nav .nav-link.active h5 {
+    color: #FFFFFF !important;
+}
 
-/*** Service ***/
+.feature .nav .nav-link.active h5 i {
+    color: #FFFFFF !important;
+}
+
+
 .service .nav .nav-link {
     transition: .5s;
 }
@@ -279,7 +271,6 @@ h6,
 }
 
 
-/*** Project ***/
 .project-item,
 .project-item .project-img {
     position: relative;
@@ -361,7 +352,7 @@ h6,
 }
 
 
-/*** Team ***/
+
 .team-item {
     position: relative;
     padding: 4rem 0;
@@ -417,7 +408,6 @@ h6,
 }
 
 
-/*** Testimonial ***/
 .testimonial-item {
     position: relative;
     text-align: center;
@@ -503,7 +493,7 @@ h6,
 }
 
 
-/*** Footer ***/
+
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -540,4 +530,14 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+footer {
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: #888; 
+    text-align: center;
 }
